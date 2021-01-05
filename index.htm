@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYxMI</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="payxmi-header">
+                <a class="payxmi-logo"></a>
+                <div class="payxmi-ham-menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg viewBox="0 0 100 100">
+                        <path class="payxmi-ham-line payxmi-ham-line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="payxmi-ham-line payxmi-ham-line2" d="M 20,50 H 80" />
+                        <path class="payxmi-ham-line payxmi-ham-line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+            <h3>Get more from your money, open a mobile money account today</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+            <div class="space"></div>
+            <div class="payxmi-row">
+                <button class="payxmi-main-button round payxmi-locked-48">Signup</button>
+                <button class="payxmi-accent-button round payxmi-locked-48">Download App</button>
+            </div>
+            <div class="space"></div>
+            <img src="./assets/Pixel front.png" width="100%" height="auto" />
+        </div>
+        <div class="section payxmi-light-blue txt-white">
+            <h3>Payment Solution for any business</h3>
+            <div class="space"></div>
+            <div class="payxmi-slider" id="slider1" onwheel = "window.scroll()" onscroll="scrollChange()"}>
+                <div class="payxmi-slide">
+                    <img src="./assets/people-using-mobile-bank@2x.png" width="100%" height="auto">
+                    <div class="space"></div>
+                    <h3>Personal Use</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <div class="payxmi-row center">
+                        <button class="payxmi-accent-button round payxmi-locked-48">Learn More</button>
+                    </div>
+                </div>
+                <div class="payxmi-slide">
+                    <img src="./assets/people-using-mobile-bank@2x.png" width="100%" height="auto">
+                    <div class="space"></div>
+                    <h3>Personal Use</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <div class="payxmi-row center">
+                        <button class="payxmi-accent-button round payxmi-locked-48">Learn More</button>
+                    </div>
+                </div>
+                <div class="payxmi-slide">
+                    <img src="./assets/people-using-mobile-bank@2x.png" width="100%" height="auto">
+                    <div class="space"></div>
+                    <h3>Personal Use</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <div class="payxmi-row center">
+                        <button class="payxmi-accent-button round payxmi-locked-48">Learn More</button>
+                    </div>
+                </div>
+                <div class="payxmi-slide">
+                    <img src="./assets/people-using-mobile-bank@2x.png" width="100%" height="auto">
+                    <div class="space"></div>
+                    <h3>Personal Use</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <div class="payxmi-row center">
+                        <button class="payxmi-accent-button round payxmi-locked-48">Learn More</button>
+                    </div>
+                </div>
+                <div class="payxmi-slide">
+                    <img src="./assets/people-using-mobile-bank@2x.png" width="100%" height="auto">
+                    <div class="space"></div>
+                    <h3>Personal Use</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <div class="payxmi-row center">
+                        <button class="payxmi-accent-button round payxmi-locked-48">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="payxmi-row center" id="sliderDots1">
+                <div class="payxmi-dot white" onclick="changeSlide(0)"></div>
+                <div class="payxmi-dot white" onclick="changeSlide(1)"></div>
+                <div class="payxmi-dot white" onclick="changeSlide(2)"></div>
+                <div class="payxmi-dot white" onclick="changeSlide(3)"></div>
+                <div class="payxmi-dot white" onclick="changeSlide(4)"></div>
+            </div>
+            
+        </div>
+        <div class="section">
+            <div class="payxmi-slider" style="height: 95%;" onwheel = "window.scroll()" >
+                <div class="payxmi-slide">
+                    <img src="./assets/Pixel front.png" width="100%" height="auto" />
+                    <h5 class="txt-light-blue">Manage your money better</h5>
+                    <p>Get instant spending notification, and keep your spending on track</p>
+                </div>
+                <div class="payxmi-slide">
+                    <img src="./assets/Pixel front.png" width="100%" height="auto" />
+                    <h5 class="txt-light-blue">Manage your money better</h5>
+                    <p>Get instant spending notification, and keep your spending on track</p>
+                </div>
+                <div class="payxmi-slide">
+                    <img src="./assets/Pixel front.png" width="100%" height="auto" />
+                    <h5 class="txt-light-blue">Manage your money better</h5>
+                    <p>Get instant spending notification, and keep your spending on track</p>
+                </div>
+                <div class="payxmi-slide">
+                    <img src="./assets/Pixel front.png" width="100%" height="auto" />
+                    <h5 class="txt-light-blue">Manage your money better</h5>
+                    <p>Get instant spending notification, and keep your spending on track</p>
+                </div>
+            </div>
+            <div class="payxmi-row center">
+                <div class="payxmi-dot"></div>
+                <div class="payxmi-dot"></div>
+                <div class="payxmi-dot"></div>
+                <div class="payxmi-dot"></div>
+                <div class="payxmi-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./sliders.js"></script>
+</body>
+</html>
